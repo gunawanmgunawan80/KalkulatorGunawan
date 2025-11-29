@@ -213,7 +213,7 @@ class SimpleCalculator:
         self.update_display()
 
     def format_number(self, num):
-        s = ('{:.10f}'.format(num)).rstrip("0").rstrip(".")
+        s = ('{:.3f}'.format(num)).rstrip("0").rstrip(".")
         return s if s != "" else "0"
 
 
